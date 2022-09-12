@@ -29,7 +29,7 @@ function Landing() {
 
         <div className="relative  h-[450px] w-[450px] transition-all duration-500 
         md:inline lg:h-[550px] lg:w-[500px]">
-            <Image src="/chopp.png" layout="fill" objectFit="contain" priority/>
+            <Image src="/chopp.png" layout="fill" objectFit="contain" priority alt='caneco de chopp'/>
 
         </div>
     </section>

@@ -82,7 +82,7 @@ const Tabs = () => {
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
 
-                  <Image src={ColoniaLogo} className="marcas-tab" />
+                  <Image src={ColoniaLogo} className="marcas-tab" alt="colonia" />
 
                   <p>
                   Chopp Pilsen Suave, comercial de colarinho cremoso e dourado, 
@@ -93,7 +93,7 @@ const Tabs = () => {
                   </p>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                <Image src={HardenLogo} className="marcas-tab" />
+                <Image src={HardenLogo} className="marcas-tab" alt="harden"/>
                   <p>
                     Completely synergize resource taxing relationships via
                     premier niche markets. Professionally cultivate one-to-one
@@ -105,7 +105,7 @@ const Tabs = () => {
                   </p>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                <Image src={LohnLogo} className="marcas-tab" />
+                <Image src={LohnLogo} className="marcas-tab" alt="lohn"/>
                   <p>
                     Efficiently unleash cross-media information without
                     cross-media value. Quickly maximize timely deliverables for

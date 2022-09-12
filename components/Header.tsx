@@ -15,7 +15,7 @@ export default function Header() {
 
               <Link href="/">
                 <div className='logoIcon'>
-                    <Image src={Logobk} layout='fill' objectFit='contain'/>
+                    <Image src={Logobk} layout='fill' objectFit='contain' alt='logo'/>
                 </div>
               </Link>
               
