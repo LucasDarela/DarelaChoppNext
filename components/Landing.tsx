@@ -5,9 +5,9 @@ import Button from './Button'
 
 function Landing() {
   return (
-    <main className="relative h-[170vh] bg-[#E7ECEE] z-10">
+    <main className="relative h-[170vh] bg-[#E7ECEE]">
 
-    <section className='sticky top-0 mx-auto flex h-[70vh] max-w-[1350px] items-center justify-btween px-8'>
+    <section className='sticky top-0 mx-auto flex h-[70vh] max-w-[1350px] items-center justify-btween px-8 z-10'>
         <div className='space-y-8'>
 
             <h1 className="space-y-3 text-5xl font-semibold tracking-wide lg:text-6xl xl:text-8xl">
