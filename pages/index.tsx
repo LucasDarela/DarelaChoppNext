@@ -6,7 +6,7 @@ const Home = ({ }) => {
   return (
     <div className="">
       <Head>
-        <title>Darela Chopp Express</title>
+        <title>Darela Chopp</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Landing />
