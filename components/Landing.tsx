@@ -5,7 +5,7 @@ import Button from './Button'
 
 function Landing() {
   return (
-    <main className="relative h-[170vh] bg-[#E7ECEE]">
+    <main className="relative h-[170vh] bg-[#E7ECEE] z-10">
 
     <section className='sticky top-0 mx-auto flex h-[70vh] max-w-[1350px] items-center justify-btween px-8'>
         <div className='space-y-8'>
