@@ -4,7 +4,7 @@ import Chopes from "../components/Chopes";
 
 const Home = ({ }) => {
   return (
-    <div className="">
+    <div className="scroll-smooth">
       <Head>
         <title>Darela Chopp</title>
         <link rel="icon" href="/favicon.ico" />

@@ -4,9 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     body {
-        @apply font-body text-[#232428];
+        @apply font-body text-[#232428] ;
     }
 }
 

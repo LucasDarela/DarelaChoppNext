@@ -15,12 +15,13 @@ const Tabs = () => {
             className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
             role="tablist"
           >
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            {/* Colônia */}
+            <li className="-mb-px mr-2 mt-2 last:mr-0 flex-auto text-center">
               <a
                 className={
                   "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                   (openTab === 1
-                    ? "text-white bg-blueGray-600"
+                    ? "text-white bg-yellow-600"
                     : "text-blueGray-600 bg-white")
                 }
                 onClick={e => {
@@ -34,12 +35,13 @@ const Tabs = () => {
                 Colônia
               </a>
             </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            {/* Harden */}
+            <li className="-mb-px mr-2 mt-2  last:mr-0 flex-auto text-center">
               <a
                 className={
                   "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                   (openTab === 2
-                    ? "text-white bg-blueGray-600"
+                    ? "text-white bg-yellow-600"
                     : "text-blueGray-600 bg-white")
                 }
                 onClick={e => {
@@ -53,12 +55,13 @@ const Tabs = () => {
                 Harden
               </a>
             </li>
-            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+            {/* Lohn */}
+            <li className="-mb-px mr-2 mt-2  last:mr-0 flex-auto text-center">
               <a
                 className={
                   "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                   (openTab === 3
-                    ? "text-white bg-blueGray-600"
+                    ? "text-white bg-yellow-600"
                     : "text-blueGray-600 bg-white")
                 }
                 onClick={e => {
@@ -72,14 +75,35 @@ const Tabs = () => {
                 Lohn Bier
               </a>
             </li>
+            {/* Autêntico */}
+            <li className="-mb-px mr-2 mt-2  last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                  (openTab === 4
+                    ? "text-white bg-yellow-600"
+                    : "text-blueGray-600 bg-white")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(4);
+                }}
+                data-toggle="tab"
+                href="#link4"
+                role="tablist"
+              >
+                Autêntico
+              </a>
+            </li>
             
           </ul>
 
-
+                {/* Conteúdo */}
 
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
+            {/* Colônia */}
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
 
                   <Image src={ColoniaLogo} className="marcas-tab" alt="colonia" />
@@ -92,6 +116,7 @@ const Tabs = () => {
                     <br />  Teor alcoólico 4,2% e IBU 5,1.
                   </p>
                 </div>
+            {/* Harden */}
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                 <Image src={HardenLogo} className="marcas-tab" alt="harden"/>
                   <p>
@@ -104,15 +129,22 @@ const Tabs = () => {
                     state of the art customer service.
                   </p>
                 </div>
+            {/* Lohn */}
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                 <Image src={LohnLogo} className="marcas-tab" alt="lohn"/>
                   <p>
-                    Efficiently unleash cross-media information without
-                    cross-media value. Quickly maximize timely deliverables for
-                    real-time schemas.
-                    <br />
-                    <br /> Dramatically maintain clicks-and-mortar solutions
-                    without functional solutions.
+                   Um Chopp refrescante e dourado, leve e com lúpulos e carbonatação ideais para preservar o sabor do puro malte Pilsen.
+                    <br /> 4,6% Vol 11IBU 2-6ºC 
+                    <br /> Combina com pratos diversos, de petiscos e salgadinhos a preparados com temperos, como churrasco, feijoada, carreteiro e paella.
+                  </p>
+                </div>
+                {/* Autêntio  */}
+                <div className={openTab === 4 ? "block" : "hidden"} id="link4">
+                <Image src={LohnLogo} className="marcas-tab" alt="autentico"/>
+                  <p>
+                  Chopp de vinho
+                    <br /> 4,6% Vol 11IBU 2-6ºC 
+                    <br /> Combina com pratos diversos, de petiscos e salgadinhos a preparados com temperos, como churrasco, feijoada, carreteiro e paella.
                   </p>
                 </div>
               </div>

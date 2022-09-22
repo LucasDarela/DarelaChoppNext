@@ -2,6 +2,7 @@ import Logobk from '../public/logobk.svg'
 import Link from 'next/link';
 import Image from 'next/image'
 import { useState } from 'react';
+import Button from './Button';
 
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
 
-              <Link href="/">
+              <Link href="/" >
                 <div className='logoIcon'>
                     <Image src={Logobk} layout='fill' objectFit='contain' alt='logo'/>
                 </div>
@@ -72,7 +73,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li className="text-black">
-                  <Link href="/chopes">
+                  <Link href="/#chopes">
                     <a>Chopes</a>
                   </Link>
                 </li>
@@ -85,6 +86,14 @@ export default function Header() {
                   <Link href="/contato">
                     <a>Contato</a>
                   </Link>
+                </li>
+                <li className="text-black">
+                  <Link href="/faq">
+                    <a>FAQ</a>
+                  </Link>
+                </li>
+                <li className='hidden md:block'>
+                <Button title="Peça Já"/>
                 </li>
               </ul>
             </div>
