@@ -107,9 +107,7 @@ const Tabs = () => {
                
                 {/* Colônia */}
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <a href="/chopp-colonia">
                     <Image src={ColoniaLogo} className="marcas-tab" alt="colonia" />
-                  </a>
                   <p>
                     Chopp Pilsen Suave, comercial de colarinho cremoso e dourado,
                     aroma e paladar destacam o malte, grande versatilidade para harmonização de pratos.
@@ -122,9 +120,7 @@ const Tabs = () => {
                 {/* Harden */}
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <div className="flex-auto text-center">
-                    <a href="/chopp-harden">
                       <Image src={HardenLogo} className="marcas-tab" alt="harden" />
-                    </a>
                   </div>
                   <p>
                   Chopp Pilsen Suave, comercial de colarinho cremoso e dourado,
@@ -136,9 +132,7 @@ const Tabs = () => {
 
                 {/* Lohn */}
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                  <a href="/chopp-lohn">
                     <Image src={LohnLogo} className="marcas-tab" alt="lohn" />
-                  </a>
                   <p>
                     Um Chopp refrescante e dourado, leve e com lúpulos e carbonatação ideais para preservar o sabor do puro malte Pilsen.
                     <br /> 4,6% Vol 11IBU 2-6ºC
@@ -149,9 +143,7 @@ const Tabs = () => {
                 {/* Autêntio  */}
                 <div className={openTab === 4 ? "block" : "hidden"} id="link4">
                   <div className="flex-auto text-center">
-                    <a href="/chopp-autentico">
                       <Image src={Autentico} className="marcas-tab " alt="autentico" />
-                    </a>
                   </div>
                   <p>
                     Chopp de vinho
