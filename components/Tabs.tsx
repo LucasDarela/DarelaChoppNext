@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import ColoniaLogo from '../public/marcas/Colonia_logo.png'
-import HardenLogo from '../public/marcas/Harden_logo.png'
-import LohnLogo from '../public/marcas/Lohn_logo.svg'
+import ColoniaLogo from '../public/marcas/Colonia.png'
+import HardenLogo from '../public/marcas/Harden.png'
+import LohnLogo from '../public/marcas/Lohn.png'
+import Autentico from '../public/marcas/Autentico.png'
 
 
 const Tabs = () => {
@@ -95,55 +96,66 @@ const Tabs = () => {
                 Autêntico
               </a>
             </li>
-            
+
           </ul>
 
-                {/* Conteúdo */}
+          {/* Conteúdo */}
 
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
-            {/* Colônia */}
+               
+                {/* Colônia */}
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-
-                  <Image src={ColoniaLogo} className="marcas-tab" alt="colonia" />
-
+                  <a href="/chopp-colonia">
+                    <Image src={ColoniaLogo} className="marcas-tab" alt="colonia" />
+                  </a>
                   <p>
-                  Chopp Pilsen Suave, comercial de colarinho cremoso e dourado, 
-                  aroma e paladar destacam o malte, grande versatilidade para harmonização de pratos.
-
+                    Chopp Pilsen Suave, comercial de colarinho cremoso e dourado,
+                    aroma e paladar destacam o malte, grande versatilidade para harmonização de pratos.
                     <br />
                     <br />  Teor alcoólico 4,2% e IBU 5,1.
                   </p>
+                  <br /><button className="pointer"> <a href="/chopp-colonia">Saiba Mais</a> </button>
                 </div>
-            {/* Harden */}
+
+                {/* Harden */}
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                <Image src={HardenLogo} className="marcas-tab" alt="harden"/>
+                  <div className="flex-auto text-center">
+                    <a href="/chopp-harden">
+                      <Image src={HardenLogo} className="marcas-tab" alt="harden" />
+                    </a>
+                  </div>
                   <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
+                  Chopp Pilsen Suave, comercial de colarinho cremoso e dourado,
+                    aroma e paladar destacam o malte, grande versatilidade para harmonização de pratos.
                     <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
+                    <br />Teor alcoólico 4,2% e IBU 5,1.
                   </p>
                 </div>
-            {/* Lohn */}
+
+                {/* Lohn */}
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                <Image src={LohnLogo} className="marcas-tab" alt="lohn"/>
+                  <a href="/chopp-lohn">
+                    <Image src={LohnLogo} className="marcas-tab" alt="lohn" />
+                  </a>
                   <p>
-                   Um Chopp refrescante e dourado, leve e com lúpulos e carbonatação ideais para preservar o sabor do puro malte Pilsen.
-                    <br /> 4,6% Vol 11IBU 2-6ºC 
+                    Um Chopp refrescante e dourado, leve e com lúpulos e carbonatação ideais para preservar o sabor do puro malte Pilsen.
+                    <br /> 4,6% Vol 11IBU 2-6ºC
                     <br /> Combina com pratos diversos, de petiscos e salgadinhos a preparados com temperos, como churrasco, feijoada, carreteiro e paella.
                   </p>
                 </div>
+
                 {/* Autêntio  */}
                 <div className={openTab === 4 ? "block" : "hidden"} id="link4">
-                <Image src={LohnLogo} className="marcas-tab" alt="autentico"/>
+                  <div className="flex-auto text-center">
+                    <a href="/chopp-autentico">
+                      <Image src={Autentico} className="marcas-tab " alt="autentico" />
+                    </a>
+                  </div>
                   <p>
-                  Chopp de vinho
-                    <br /> 4,6% Vol 11IBU 2-6ºC 
+                    Chopp de vinho
+                    <br /> 4,6% Vol 11IBU 2-6ºC
                     <br /> Combina com pratos diversos, de petiscos e salgadinhos a preparados com temperos, como churrasco, feijoada, carreteiro e paella.
                   </p>
                 </div>
