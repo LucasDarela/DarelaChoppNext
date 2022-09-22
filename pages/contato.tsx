@@ -66,7 +66,7 @@ function Contato() {
                     <div className="col-span-6">
                     <label htmlFor="about" className="block text-sm font-medium text-gray-700">Mensagem</label>
                     <div className="mt-1">
-                      <textarea id="about" name="about" rows="3" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 sm:text-sm" placeholder="Digite sua mensagem..."></textarea>
+                      <textarea id="about" name="about" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 sm:text-sm" placeholder="Digite sua mensagem..."></textarea>
                     </div>
                     {/* <p className="mt-2 text-sm text-gray-500">Brief description for your profile. URLs are hyperlinked.</p> */}
                   </div>
